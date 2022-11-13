@@ -1,0 +1,89 @@
+.kc__form_wrapper
+  height: 100%
+  display: flex
+
+
+.kc__form
+  margin: auto
+
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  align-content: flex-start
+
+  .submit_button
+    align-self: center
+
+    @media screen and (max-width: 436px)
+      width: 100%
+
+    @media screen and (min-width: 436px) and (max-width: 700px)
+      width: 400px
+
+    @media screen and (min-width: 1366px)
+      width: 23.5vw
+      max-width: 600px
+
+    @media screen and (max-width: 1100px)
+      margin-top: 6px
+
+
+  .bottom_row
+    align-self: flex-start
+
+    margin: 0 12px 12px
+
+    width: 100%
+
+    display: flex
+    justify-content: center
+
+
+.kc__form_row
+  padding: 12px 6px 6px
+
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+
+  @media screen and (max-width: 1007px)
+    padding: 12px 6px 0
+
+  @media screen and (min-width: 1007px) and (max-width: 1100px)
+    padding: 6px 0 0
+
+
+.kc__form section
+  order: var(--order)
+
+  margin: 12px
+  padding: 0 12px 12px
+
+  width: 320px
+
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+  @media screen and (max-width: 436px)
+    width: 100%
+
+  @media screen and (min-width: 436px) and (max-width: 700px)
+    width: 400px
+
+  @media screen and (min-width: 1366px)
+    width: 23.5vw
+    max-width: 600px
+
+  @media screen and (max-width: 1007px)
+    order: var(--column-order)
+
+  @media screen and (max-width: 1100px)
+    margin: 6px
+
+  h2
+    text-align: center
+    font-weight: 300
+
+  .mdl-textfield
+    width: 100%

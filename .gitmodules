@@ -1,0 +1,39 @@
+[submodule "core/services/near-state-indexer"]
+	path = core/services/near-state-indexer
+	url = https://github.com/near-akaia/run.core.service.near-state-indexer.git
+[submodule "core/services/fast-near"]
+	path = core/services/fast-near
+	url = https://github.com/near-akaia/run.core.service.fast-near.git
+[submodule "core/services/web4"]
+	path = core/services/web4
+	url = https://github.com/near-akaia/run.core.service.web4.git
+[submodule "core/services/web4-deploy"]
+	path = core/services/web4-deploy
+	url = https://github.com/near-akaia/run.core.service.web4-deploy.git
+[submodule "core/adapters/nearfs"]
+	path = core/adapters/nearfs
+	url = https://github.com/near-akaia/run.core.adapter.nearfs.git
+[submodule "core/lib/web4"]
+	path = core/lib/web4
+	url = https://github.com/near-akaia/run.core.lib.web4.git
+[submodule "core/services/croncat"]
+	path = core/services/croncat
+	url = https://github.com/near-akaia/run.core.service.croncat.git
+[submodule "core/adapters/keypom"]
+	path = core/adapters/keypom
+	url = https://github.com/near-akaia/run.core.adapter.keypom.git
+[submodule "core/adapters/near-cli-rs"]
+	path = core/adapters/near-cli-rs
+	url = https://github.com/near-akaia/run.core.adapters.near-cli-rs.git
+[submodule "core/adapters/composedb"]
+	path = core/adapters/composedb
+	url = https://github.com/near-akaia/run.core.adapter.composedb.git
+[submodule "entities/dao"]
+	path = entities/dao
+	url = https://github.com/near-akaia/run.entity.dao.git
+[submodule "entities/multicall"]
+	path = entities/multicall
+	url = https://github.com/near-akaia/run.entity.multicall.git
+[submodule "core/gui/tools/unocss-deno"]
+	path = core/gui/tools/unocss-deno
+	url = https://github.com/near-akaia/run.core.libs.unocss-deno

@@ -1,0 +1,26 @@
+#login_panel
+  = image_tag 'project-logo.gif', class: 'project-logo'
+
+  = form_for 'user', url: '/login', html: {id: 'login_form', class: 'kc__form'} do |f|
+    - user = ENTITIES[:User]
+
+    - unless @error.nil?
+      %p= 'Wrong username or password' if @error == 401
+
+    .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label.is-dirty
+      = f.label :name, 'Username', class: 'mdl-textfield__label'
+      = f.text_field :name,
+        pattern: ".{#{ user[:name][:length].min },}",
+        maxlength: user[:name][:length].max,
+        required: user[:name][:required],
+        class: 'mdl-textfield__input credential_field'
+
+    .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+      = label :passphrase, 'Password', class: 'mdl-textfield__label'
+      = f.password_field :passphrase,
+        pattern: ".{#{ user[:passphrase][:length].min },}",
+        maxlength: user[:passphrase][:length].max,
+        required: user[:passphrase][:required],
+        class: 'mdl-textfield__input credential_field'
+
+    = f.submit 'LOGIN', class: 'kc__input kc__button primary'

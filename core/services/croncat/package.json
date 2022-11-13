@@ -1,0 +1,69 @@
+{
+	"name": "croncat",
+	"version": "1.8.3",
+	"description": "cron.cat CLI and Agent Runner",
+	"type": "module",
+	"main": "src/index.js",
+	"scripts": {
+		"build": "babel src -d dist && cp src/contract_abi.json dist",
+		"build:cli": "babel src -d dist/src; babel bin -d dist/bin; babel cli -d dist/cli; cp src/contract_abi.json dist/src; cp package.json dist",
+		"build:all": "yarn package && yarn package:cli && yarn docker:build",
+		"start": "node bin/croncat.js",
+		"restart": "rimraf dist && npm run start",
+		"dev": "nodemon --exec npm run restart",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"package": "rimraf dist && yarn build && pkg -t node14-alpine-x64 --output croncat-agent dist/index.js",
+		"package:cli": "yarn build:cli && pkg -t node14-alpine-x64 --output croncat-cli dist/bin/croncat.js",
+		"docker:build": "docker build -t croncat ."
+	},
+	"bin": {
+		"croncat": "bin/croncat"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Cron-Near/croncat.git"
+	},
+	"keywords": [
+		"Cron",
+		"Croncat",
+		"NEAR",
+		"Blockchain"
+	],
+	"author": "@trevorjtclarke",
+	"contributors": [
+		{
+			"name": "Rin Akaia",
+			"email": "carina@dmail.ai",
+			"url": "https://github.com/Rin-Akaia-eth"
+		}
+	],
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/Cron-Near/croncat/issues"
+	},
+	"homepage": "https://github.com/Cron-Near/croncat#readme",
+	"dependencies": {
+		"axios": "^0.22.0",
+		"big.js": "^6.0.3",
+		"chalk": "^4.1.0",
+		"core-js": "^3.10.1",
+		"dotenv": "^8.2.0",
+		"esm": "^3.2.25",
+		"flagged-respawn": "^1.0.1",
+		"is-ci": "^3.0.0",
+		"near-api-js": "^0.43.1",
+		"regenerator-runtime": "^0.13.7",
+		"update-notifier": "^5.1.0",
+		"v8flags": "^3.2.0",
+		"yargs": "^16.2.0"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.13.14",
+		"@babel/core": "^7.13.15",
+		"@babel/plugin-proposal-class-properties": "^7.13.0",
+		"@babel/preset-env": "^7.13.15",
+		"nodemon": "^2.0.7",
+		"pkg": "^5.2.1",
+		"rimraf": "^3.0.2"
+	}
+}

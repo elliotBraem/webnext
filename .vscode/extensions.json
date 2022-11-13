@@ -1,0 +1,8 @@
+{
+	"recommendations": [
+		"denoland.vscode-deno",
+		"dioxuslabs.dioxus",
+		"karunamurti.haml",
+		"dtsvet.vscode-wasm"
+	]
+}

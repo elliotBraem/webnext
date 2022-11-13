@@ -1,0 +1,148 @@
+/*
+  *= require_self
+  *= require ./lib/flatpickr
+  *= require ./mdl/button
+  *= require ./mdl/card
+  *= require ./mdl/palette
+  *= require ./mdl/ripple
+  *= require ./mdl/shadow
+  *= require ./mdl/slider
+  *= require ./mdl/textfield
+  *= require_tree ./components
+  *= require ./theme
+  *= require materialdesignicons */
+
+
+@font-face
+  font-family: 'Roboto Condensed'
+  src: url('/RobotoCondensed-Regular.woff') format('woff')
+
+
+body, input, textarea, button
+  font-family: 'Roboto Condensed'
+
+
+body
+  margin: 0
+  height: 100vh
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  background-color: #33333D
+
+
+label
+  color: #424242
+
+
+.mdl-card__actions
+  display: flex
+  flex-direction: row-reverse
+
+
+.mdl-slider::-webkit-slider-thumb
+  border: none !important
+  background: rgb(96,125,139) !important
+
+
+.kc__classic_layout
+  width: 100%
+  height: 100%
+
+  display: flex
+  flex-direction: column
+
+  .kc-table:nth-child(2),
+  .kc__form:nth-child(2),
+  .kc__list:nth-child(2)
+    margin-top: 56px
+
+
+.transactions_table
+  margin: 12px
+
+  width: calc(100% - 24px)
+  height: calc(100% - 24px)
+
+  display: flex
+
+
+.mdl-textfield__input
+  resize: none
+
+
+#login_panel
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+  .project-logo
+    max-width: 138px
+    max-height: 141px
+
+
+#login_form
+  margin-top: 16px
+  min-height: 215px
+  flex-direction: column
+
+  & > div, & > input
+    width: 290px
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover, 
+  input:-webkit-autofill:focus
+    -webkit-text-fill-color: #FFF
+    -webkit-box-shadow: 0 0 0px 30px #263238 inset
+
+  
+#login_form, #login_form label
+  color: #FFF
+
+
+#main_menu
+  height: 100%
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+
+#users_list
+  padding: 12px 0 0 0
+  width: 100%
+  height: 100%
+
+  li
+    margin: 12px
+    padding: 14px 12px 6px
+
+    width: 300px
+
+    flex-direction: column
+    align-items: stretch
+
+  form
+    display: flex
+    flex-direction: column
+
+  .delete-user
+    align-self: flex-start
+    margin: -44px 0 0 8px
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus
+  border-bottom: 1px solid #607D8B
+
+  -webkit-text-fill-color: #000
+  -webkit-box-shadow: 0 0 0px 30px #FFF inset

@@ -1,0 +1,10 @@
+{
+	"imports": {
+		"deno.std/": "https://deno.land/std@0.159.0/",
+		"run.core/": "../core/",
+		"run.entities/": "../entities/",
+		"run.features/": "../features/",
+		"run.island/": "../island/",
+		"run.display/": "../display/"
+	}
+}

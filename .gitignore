@@ -1,0 +1,6 @@
+.DS_Store
+**/logs
+*.log
+**/target
+**/res
+Cargo.lock

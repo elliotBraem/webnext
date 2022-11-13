@@ -1,0 +1,25 @@
+!!! 5
+%html
+  %head
+    / Made with love and diligence <3
+    :ruby
+      eol = '$'
+
+      if User[session[:user_id]]
+        user = User[session[:user_id]]
+        username = user.name
+
+        eol = '#' if user.manapool == ENTITIES[:User][:manapool][:range].max
+      else
+        username = 'nobody'
+      end
+
+    %title= "#{username}@saeveski: ~#{eol}"
+    = favicon_link_tag '/favicon.ico', rel: 'shortcut icon'
+    = csrf_meta_tags
+    %meta{ "name": "viewport", "content": "width=device-width, initial-scale=1.0, minimum-scale=1.0" }
+    = javascript_include_tag 'application', media: 'all'
+    = stylesheet_link_tag 'application', media: 'all'
+
+  %body
+    = yield

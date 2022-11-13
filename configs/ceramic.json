@@ -1,0 +1,26 @@
+{
+	"anchor": {
+		"near-rpc-url": "https://rpc.ankr.com/near"
+	},
+	"http-api": {
+		"cors-allowed-origins": [
+			".*"
+		]
+	},
+	"ipfs": {
+		"mode": "remote",
+		"host": "http://localhost:5001"
+	},
+	"logger": {
+		"log-level": 2,
+		"log-to-files": false
+	},
+	"network": {
+		"name": "testnet-clay"
+	},
+	"node": {},
+	"state-store": {
+		"mode": "s3",
+		"s3-bucket": "bucket_name"
+	}
+}

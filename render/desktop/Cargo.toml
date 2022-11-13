@@ -1,0 +1,25 @@
+[package]
+name = "akaia_desktop_view"
+version = "0.2.0"
+edition = "2021"
+description = "A desktop environment for Akaia blockchain-driven cloud OS"
+readme = "README.md"
+categories = ["gui", "wasm"]
+authors = ["Carina root.akaia.near <carina@dmail.ai>"]
+autobins = false
+autoexamples = false
+autotests = false
+autobenches = false
+
+[dependencies]
+dioxus = "0.3.2"
+dioxus-web = "0.3.1"
+dioxus-router = "0.3.0"
+
+[dev-dependencies]
+# deno = "1.31.3"
+# dioxus-cli = { git = "https://github.com/DioxusLabs/cli" }
+
+[[bin]]
+name = "akaia_desktop_view"
+path = "main.rs"

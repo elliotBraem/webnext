@@ -1,0 +1,107 @@
+.kc__classic_layout
+  .kc__app_bar.mdl-shadow--2dp.primary
+    %nav.kc__nav
+      = link_to '<-', '/', class: 'kc__square_button'
+      %h3= 'Transaction creation'
+    %nav.kc__nav
+      = link_to 'Transaction manager', '/transactions', class: 'mdl-button mdl-js-button'
+      = link_to 'Logout', "/logout", method: :delete, class: 'mdl-button mdl-js-button'
+
+  = form_for 'transaction', url: '/transactions', html: { class: 'kc__form' } do |f|
+    -# Form generator
+    .kc__form_row
+      - ENTITIES[:Transaction].each_pair do |title, section|
+        -# Form sector
+        - style = "--order: #{section[:order]}; --column-order: #{section[:column_order]}"
+        %section.mdl-card.mdl-shadow--2dp{ style: style }
+          %h2= section[:caption]
+          - section[:attributes].each_pair do |field, config|
+            - if config[:editable]
+
+              :ruby
+                # Attribute field constructor
+                props = {}
+                wrapper_props = {
+                  class: 'mdl-js-textfield mdl-textfield--floating-label'
+                }
+
+                case config[:type]
+                when :String
+                  props[:required] = config[:required]
+                  props[:requirement] =
+                    "from #{ config[:length].min } to #{ config[:length].max } symbols"
+                  props[:pattern] = ".{#{ config[:length].min },}"
+                  props[:maxlength] = config[:length].max
+                  props[:placeholder] = '(not neccessary)' unless config[:required]
+                  props[:class] = 'mdl-textfield__input'
+
+                  if props[:maxlength] <= 64
+                    input = f.text_field "#{title}_#{field}", props
+                  else
+                    props[:rows] = 5
+                    input = f.text_area "#{title}_#{field}", props
+                  end
+
+                when :Integer, :Float
+                  props[:required] = config[:required]
+                  props[:requirement] = 'число'
+                  props[:pattern] = '-?[0-9]*(\.[0-9]+)?'
+                  props[:class] = 'mdl-textfield__input'
+
+                  input = f.text_field "#{title}_#{field}", props
+
+                when :Point
+                  cfg = ENTITIES.dig(*config[:relation])
+                  range = cfg[:range]
+
+                  props[:min] = range.min
+                  props[:max] = range.max
+                  props[:range] = range
+                  props[:step] = cfg[:step]
+                  props[:value] = range.min
+                  props[:class] = 'mdl-slider mdl-js-slider'
+
+                when :DateTime
+                  props[:required] = config[:required]
+                  props[:requirement] = config[:caption]
+                  props[:class] = 'flatpickr mdl-textfield__input'
+                  props[:placeholder] = 'yyyy-mm-dd hh:mm:ss,'
+
+                  input = f.text_field field, props
+                end
+
+              - case config[:type]
+              - when :String, :Integer, :Float, :DateTime
+                -# Attribute textfield or datepicker
+                .mdl-textfield{ wrapper_props }
+                  = f.label "#{title}_#{field}", config[:caption], class: 'mdl-textfield__label'
+                  = input
+                  - if config[:type] == :DateTime
+                    - timezones = Rails.configuration.timezones
+                    .kc-tz-selector
+                      %p= 'timezone:'
+                      = f.select :timezone, timezones, selected: '+0300'
+                  %span.mdl-textfield__error= "Enter #{ props[:requirement] }"
+
+              - when :Point
+                -# Point of range selection interface
+                = f.label "#{title}_#{field}", config[:caption]
+                .kc-slider_wrapper
+                  = f.range_field "#{title}_#{field}", props
+                  .kc-slider_scale
+                    - scale = props[:range].step(props[:step]).to_a
+                    - scale.each do |division|
+                      %label= division
+
+    .bottom_row
+      -# Form submit button
+      = f.submit 'SUBMIT',
+        class: 'kc__input kc__button submit_button mdl-shadow--2dp invert'
+
+- if @error
+  :javascript
+    confirmed = confirm('\
+      Data verification error.\n\
+      Return to edit?\
+    ')
+    if(confirmed){history.back()};

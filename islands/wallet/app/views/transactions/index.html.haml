@@ -1,0 +1,48 @@
+.kc__classic_layout
+  .kc__app_bar.primary.mdl-shadow--2dp
+    %nav.kc__nav
+      = link_to '<-', "/", class: 'kc__square_button'
+      %h3= 'Transaction manager'
+    %nav.kc__nav
+      = link_to 'Create', "/transactions/new", class: 'mdl-button mdl-js-button'
+      = link_to 'Logout', "/logout", method: :delete, class: 'mdl-button mdl-js-button'
+
+  .kc-table
+    - @transactions.each do |transaction|
+      .kc-table-row
+        - @config.each_pair do |title, section|
+
+          - style = "--order: #{section[:order]}; --column-order: #{section[:column_order]}"
+          %section.mdl-card.mdl-shadow--2dp{ style: style }
+            %h3= section[:caption]
+            - section[:attributes].each_pair do |field, config|
+              - its_route_point = field.to_s.include?('storage')
+
+              - if config[:render]
+                - unless its_route_point
+                  %label= config[:caption]
+
+                %p.kc-table-string{ class: "#{'storage-string' if its_route_point}" }
+                  - if @user.access_level >= transaction.common_availability || !config[:invisible]
+                    - case field
+
+                    - when :timestamp
+                      - value = transaction.method("#{title}_#{field}").call
+                      = Time.at value unless value.blank?
+                      = '---' if value.blank?
+
+                    - when :author
+                      - value = transaction.author
+                      = value.name unless value.blank?
+                      = '---' if value.blank?
+
+                    - else
+                      - value = transaction.method("#{title}_#{field}").call
+                      = value unless value.blank?
+                      = '---' if value.blank?
+
+                  - else
+                    = '*** hidden ***'
+
+      - unless @transactions.length < 2
+        %hr

@@ -1,0 +1,20 @@
+[workspace]
+members = [
+	"entities/dao/sputnik-staking",
+	"entities/dao/sputnikdao2",
+	"entities/dao/sputnikdao-factory2",
+	"entities/dao/test-token",
+	"render/desktop",
+	"render/promo",
+]
+
+[workspace.package]
+keywords = ["web4", "cloud", "os"]
+license = "LGPL"
+
+[profile.release]
+codegen-units = 1
+opt-level = "z"
+lto = true
+panic = "abort"
+overflow-checks = true
