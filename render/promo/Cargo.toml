@@ -19,7 +19,3 @@ dioxus-router = "0.3.0"
 [dev-dependencies]
 # deno = "1.31.3"
 # dioxus-cli = { git = "https://github.com/DioxusLabs/cli" }
-
-[[bin]]
-name = "akaia_render_promo"
-path = "main.rs"

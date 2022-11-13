@@ -1,0 +1,42 @@
+.promo {
+	width: 100%;
+	height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  overflow: hidden;
+  background: url(/bg.gif) no-repeat #000;
+  background-position: center;
+  background-size: cover;
+}
+
+img.logo {
+  height: 100vmin;
+  max-width: 640px;
+  max-height: 640px;
+  border-radius: 100%;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#play-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 10em;
+  color: #ffffff;
+  background-color: #000000;
+  cursor: pointer;
+}
+
+#play-button.hidden {
+  display: none;
+}
