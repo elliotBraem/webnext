@@ -3,4 +3,5 @@
 *.log
 **/target
 **/res
+**/dist
 Cargo.lock
