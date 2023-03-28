@@ -1,5 +1,5 @@
 [package]
-name = "akaia_render_desktop"
+name = "akaia_routes_promo"
 version = "0.2.0"
 edition = "2021"
 description = "A desktop environment for Akaia blockchain-driven cloud OS"
@@ -12,8 +12,8 @@ autotests = false
 autobenches = false
 
 [[bin]]
-name = "akaia_render_desktop"
 path = "src/main.rs"
+name = "akaia_routes_promo"
 
 [dependencies]
 dioxus = "0.3.2"

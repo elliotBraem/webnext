@@ -12,11 +12,17 @@ A blockchain-powered cloud operating system.
 
 ### Architecture
 
-#### Dependencies installation
+#### Basic dependencies installation
 
 ```bash
 asdf install
 cargo install cargo-make
+```
+
+#### Advanced development tools
+
+```bash
+cargo install cargo-modules
 ```
 
 ## web4 deploy
