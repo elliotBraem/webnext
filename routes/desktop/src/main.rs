@@ -4,9 +4,9 @@ mod router;
 mod routes;
 
 fn main() {
-	dioxus_web::launch(gui);
+	dioxus_web::launch(app_gui);
 }
 
-fn gui(cx: Scope) -> Element {
+fn app_gui(cx: Scope) -> Element {
 	render!(router::gui {})
 }
