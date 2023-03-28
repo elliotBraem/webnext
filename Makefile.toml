@@ -59,4 +59,4 @@ args = ["serve", "--platform", "web", "--hot-reload", "--port", "1337"]
 
 [tasks.dev]
 workspace = false
-dependencies = ["tasks.desktop-render-dev"]
+dependencies = ["desktop-render-dev"]
