@@ -1,5 +1,5 @@
 [package]
-name = "akaia_routes_desktop"
+name = "akaia_desktop-route"
 version = "0.2.0"
 edition = "2021"
 description = "A desktop environment for Akaia blockchain-driven cloud OS"
@@ -12,13 +12,13 @@ autotests = false
 autobenches = false
 
 [[bin]]
-name = "akaia_routes_desktop"
+name = "akaia_desktop-route"
 path = "src/main.rs"
 
 [dependencies]
 dioxus = "0.3.2"
-dioxus-web = "0.3.1"
 dioxus-router = "0.3.0"
+dioxus-web = "0.3.1"
 
 [dev-dependencies]
 # deno = "1.31.3"
