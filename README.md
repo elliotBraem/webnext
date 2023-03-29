@@ -1,6 +1,6 @@
 # Fractal
 
-A blockchain-powered cloud operating system and full-stack web4 applications framework
+A blockchain-powered cloud operating system and full-stack web4 application framework
 
 ## Development setup
 
