@@ -1,5 +1,5 @@
 [package]
-name = "akaia_desktop-route"
+name = "akaia_desktop-realm"
 version = "0.2.0"
 edition = "2021"
 description = "A desktop environment"
@@ -12,13 +12,16 @@ autotests = false
 autobenches = false
 
 [[bin]]
-name = "akaia_desktop-route"
+name = "akaia_desktop-realm"
 path = "src/main.rs"
 
 [dependencies]
-dioxus = { git = "https://github.com/DioxusLabs/dioxus.git" }
-dioxus-router = { git = "https://github.com/DioxusLabs/dioxus.git" }
-dioxus-web = { git = "https://github.com/DioxusLabs/dioxus.git" }
+async-std = "1.12.0"
+dioxus = "0.3.2"
+dioxus-router = "0.3.0"
+dioxus-web = "0.3.1"
+log = "0.4.6"
+wasm-logger = "0.2.0"
 
 [dev-dependencies]
 # deno = "1.31.3"

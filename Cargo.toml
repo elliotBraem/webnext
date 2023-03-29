@@ -4,8 +4,8 @@ members = [
 	"entities/dao/sputnikdao2",
 	"entities/dao/sputnikdao-factory2",
 	"entities/dao/test-token",
-	"routes/desktop",
-	"routes/promo",
+	"realms/desktop",
+	"realms/promo",
 ]
 
 [workspace.package]

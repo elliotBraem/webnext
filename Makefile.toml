@@ -15,48 +15,48 @@ command = "cargo"
 args = ["build", "--target", "wasm32-unknown-unknown", "--release", "--lib"]
 dependencies = ["clean"]
 
-[tasks.desktop-route-dev-build]
+[tasks.desktop-realm-dev-build]
 workspace = false
 install_script = "cargo install --git https://github.com/DioxusLabs/cli"
-cwd = "./routes/desktop/"
+cwd = "./realms/desktop/"
 command = "dioxus"
 args = ["build", "--platform", "web"]
 
-[tasks.desktop-route-prod-build]
+[tasks.desktop-realm-prod-build]
 workspace = false
 install_script = "cargo install --git https://github.com/DioxusLabs/cli"
-cwd = "./routes/desktop/"
+cwd = "./realms/desktop/"
 command = "dioxus"
 args = ["build", "--platform", "web", "--release"]
 
-[tasks.desktop-route-dev-serve]
+[tasks.desktop-realm-dev-serve]
 workspace = false
 install_script = "cargo install --git https://github.com/DioxusLabs/cli"
-cwd = "./routes/desktop/"
+cwd = "./realms/desktop/"
 command = "dioxus"
 args = ["serve", "--platform", "web", "--hot-reload", "--port", "1337"]
 
-[tasks.promo-route-dev-build]
+[tasks.promo-realm-dev-build]
 workspace = false
 install_script = "cargo install --git https://github.com/DioxusLabs/cli"
-cwd = "./routes/promo/"
+cwd = "./realms/promo/"
 command = "dioxus"
 args = ["build", "--platform", "web"]
 
-[tasks.promo-route-prod-build]
+[tasks.promo-realm-prod-build]
 workspace = false
 install_script = "cargo install --git https://github.com/DioxusLabs/cli"
-cwd = "./routes/promo/"
+cwd = "./realms/promo/"
 command = "dioxus"
 args = ["build", "--platform", "web", "--release"]
 
-[tasks.promo-route-dev-serve]
+[tasks.promo-realm-dev-serve]
 workspace = false
 install_script = "cargo install --git https://github.com/DioxusLabs/cli"
-cwd = "./routes/promo/"
+cwd = "./realms/promo/"
 command = "dioxus"
 args = ["serve", "--platform", "web", "--hot-reload", "--port", "1337"]
 
 [tasks.dev]
 workspace = false
-dependencies = ["desktop-route-dev-serve"]
+dependencies = ["desktop-realm-dev-serve"]
