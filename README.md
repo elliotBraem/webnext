@@ -1,6 +1,6 @@
-# akaia.run
+# Fractal
 
-A blockchain-powered cloud operating system.
+A blockchain-powered cloud operating system and full-stack web4 applications framework
 
 ## Development setup
 
@@ -24,6 +24,8 @@ cargo install cargo-make
 ```bash
 cargo install cargo-modules
 ```
+
+#### Framework specification
 
 ## web4 deploy
 

@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 
-pub fn gui(cx: Scope) -> Element {
+pub fn render(cx: Scope) -> Element {
 	render! ({
 		<audio id="player" preload="auto" loop="loop">
 			<source src="https://cloudflare-ipfs.com/ipfs/bafybeifyrtsvn2xefvlx3tv6mqhwyuaibjutfapfekw56brklx4bxowjxm/theme.mp3" type="audio/mpeg" />
