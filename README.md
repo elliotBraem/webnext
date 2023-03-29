@@ -46,5 +46,5 @@ cargo install cargo-modules
 Using [near-cli-rs](https://near.cli.rs) you can deploy the contract to your account:
 
 ```bash
-near-cli contract deploy web4.akaia.near use-file ./target/wasm32-unknown-unknown/release/near_akaia_promo.wasm without-init-call network-config mainnet
+near-cli contract deploy web4.akaia.near use-file ./target/wasm32-unknown-unknown/release/fractal_promo-realm.wasm without-init-call network-config mainnet
 ```

@@ -1,8 +1,8 @@
 [package]
-name = "akaia_desktop-realm"
+name = "fractal_desktop-realm"
 version = "0.2.0"
 edition = "2021"
-description = "A desktop environment"
+description = "A desktop environment for Fractal OS"
 readme = "README.md"
 categories = ["gui", "wasm"]
 authors = ["Carina root.akaia.near <carina@dmail.ai>"]
@@ -12,7 +12,7 @@ autotests = false
 autobenches = false
 
 [[bin]]
-name = "akaia_desktop-realm"
+name = "fractal_desktop-realm"
 path = "src/main.rs"
 
 [dependencies]
