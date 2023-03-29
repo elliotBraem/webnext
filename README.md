@@ -2,6 +2,20 @@
 
 A blockchain-powered cloud operating system and full-stack web4 application framework
 
+## The only valid roadmap
+
+**web2**: Centralized backend, centralized frontend, centralized AI
+
+**web3**: Backend decentralized only for most critical parts, centralized frontend, centralized AI
+
+\> you are here <
+
+**web4**: Decentralized backend, decentralized frontend, centralized AI
+
+**web5**: Decentralized backend, decentralized frontend, decentralized AI
+
+**web6**: The Singularity
+
 ## Development setup
 
 ### Infrastructure
