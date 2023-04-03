@@ -1,4 +1,4 @@
-# Fractal
+# Fractality
 
 A blockchain-powered cloud operating system and full-stack web4 application framework
 
@@ -29,8 +29,7 @@ A blockchain-powered cloud operating system and full-stack web4 application fram
 #### Basic dependencies installation
 
 ```bash
-asdf install
-cargo install cargo-make
+asdf install && cargo install cargo-make
 ```
 
 #### Advanced development tools
