@@ -40,6 +40,8 @@ cargo install cargo-modules
 
 #### Framework specification
 
+WIP
+
 ## web4 deploy
 
 Using [near-cli-rs](https://near.cli.rs) you can deploy the contract to your account:
