@@ -3,6 +3,7 @@ fn_params_layout = "Compressed"
 hard_tabs = true
 match_arm_leading_pipes = "Always"
 match_block_trailing_comma = true
+max_width = 100
 newline_style = "Unix"
 reorder_imports = true
 short_array_element_width_threshold = 40
@@ -14,6 +15,7 @@ use_try_shorthand = true
 # Unstable features
 unstable_features = true
 version = "One"
+format_strings = true
 group_imports = "StdExternalCrate"
 imports_indent = "Visual"
 indent_style = "Visual"
