@@ -4,12 +4,12 @@ members = [
 	"entities/dao/sputnikdao2",
 	"entities/dao/sputnikdao-factory2",
 	"entities/dao/test-token",
-	"realms/desktop",
-	"realms/promo",
+	"spaces/desktop",
+	"spaces/promo",
 ]
 
 [workspace.package]
-keywords = ["web4", "cloud", "os"]
+keywords = ["web4", "cloud", "ai-powered", "os"]
 license = "LGPL"
 
 [profile.release]
