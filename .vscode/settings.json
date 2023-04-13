@@ -1,8 +1,4 @@
 {
-	"deno.enable": true,
-	"deno.importMap": "configs/import-map.json",
-	"deno.lint": true,
-	"explorer.sortOrder": "filesFirst",
 	"[rust]": {
 		"editor.defaultFormatter": "rust-lang.rust-analyzer",
 		"editor.formatOnSave": true
@@ -20,18 +16,25 @@
 		"comments": true,
 		"strings": "off"
 	},
+	"deno.enable": true,
+	"deno.importMap": "configs/import-map.json",
+	"deno.lint": true,
+	"explorer.sortOrder": "filesFirst",
+	"rust-analyzer.check.command": "clippy",
 	"cSpell.words": [
 		"Akaios",
 		"Basestar",
 		"bindgen",
 		"borsh",
 		"ceratosaur",
+		"clippy",
 		"deno",
 		"Fractality",
 		"ipapp",
 		"jsxdev",
 		"keychain",
 		"roadmap",
+		"rustup",
 		"rxrust",
 		"subroutes",
 		"unocss"

@@ -35,7 +35,7 @@ asdf install && cargo install cargo-make
 #### Advanced development tools
 
 ```bash
-cargo install cargo-modules
+rustup component add clippy && cargo install cargo-modules
 ```
 
 #### Fractality framework specification
