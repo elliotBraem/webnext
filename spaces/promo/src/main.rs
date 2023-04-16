@@ -1,12 +1,21 @@
-use dioxus::prelude::*;
+#![allow(non_snake_case)]
+use {dioxus::prelude::*, dioxus_router::*};
 
-mod router;
 mod routes;
 
 fn main() {
-	dioxus_web::launch(gui);
+	wasm_logger::init(wasm_logger::Config::default());
+	dioxus_web::launch(Promo);
 }
 
-fn gui(cx: Scope) -> Element {
-	render!(router::gui {})
+fn Promo(cx: Scope) -> Element {
+	render!(PromoRouter {})
+}
+
+fn PromoRouter(cx: Scope) -> Element {
+	render! (
+			Router {
+					Route { to: "/", routes::root::display {} }
+			}
+	)
 }
