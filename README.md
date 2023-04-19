@@ -1,6 +1,6 @@
 # akaios
 
-A cloud ai-powered operating system
+A cloud offline-first operating system
 
 ## The only valid roadmap
 
