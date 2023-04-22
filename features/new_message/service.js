@@ -7,10 +7,10 @@ export const send = (message) =>
 				 **/
 				.reply(message)((reply) =>
 				/**
-				 * Reactively changes state of entities.chat.history.render,
+				 * Reactively changes state of entities.chat.history.display,
 				 * 	which has `service.state.history.messages` passed as state.messages.
 				 *
-				 * Every state change of entities.chat.history.render triggers
+				 * Every state change of entities.chat.history.display triggers its rerender
 				 **/
 				entities.chat.history_update(reply),
 			),
