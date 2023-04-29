@@ -1,4 +1,4 @@
-# akaios
+# Akaia Stellarfox
 
 A cloud offline-first operating system
 
