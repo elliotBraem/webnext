@@ -12,9 +12,9 @@ An advanced cross-platform embeddable NEAR BOS Gateway
 
 **web4**: Decentralized backend, decentralized frontend, centralized AI
 
-**web5**: Decentralized backend, decentralized frontend, decentralized AI
+**webnext**: Decentralized backend, decentralized frontend, decentralized AI
 
-**web6**: The Singularity
+**counting becomes meaningless**: The Singularity
 
 ## Development setup
 
