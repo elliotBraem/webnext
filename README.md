@@ -47,5 +47,5 @@ A full-stack web4 application framework inspired by DDD, Fractal Design, and Hex
 Using [near-cli-rs](https://near.cli.rs) you can deploy the contract to your account:
 
 ```bash
-near-cli contract deploy web4.akaia.near use-file ./target/wasm32-unknown-unknown/release/akaios-promo-space.wasm without-init-call network-config mainnet
+near-cli contract deploy web4.akaia.near use-file ./target/wasm32-unknown-unknown/release/stellarfox-promo-space.wasm without-init-call network-config mainnet
 ```

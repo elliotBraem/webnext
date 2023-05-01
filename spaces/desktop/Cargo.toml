@@ -1,8 +1,8 @@
 [package]
-name = "akaios-desktop-space"
+name = "stellarfox-desktop-space"
 version = "0.2.0"
 edition = "2021"
-description = "A desktop environment for Akaios"
+description = "A desktop environment for Stellarfox"
 readme = "README.md"
 categories = ["gui", "wasm"]
 authors = ["Carina root.akaia.near <carina@dmail.ai>"]
@@ -12,7 +12,7 @@ autotests = false
 autobenches = false
 
 [[bin]]
-name = "akaios-desktop-space"
+name = "stellarfox-desktop-space"
 path = "src/main.rs"
 
 [dependencies]

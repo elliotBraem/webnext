@@ -22,7 +22,6 @@
 	"explorer.sortOrder": "filesFirst",
 	"rust-analyzer.check.command": "clippy",
 	"cSpell.words": [
-		"Akaios",
 		"Basestar",
 		"bindgen",
 		"borsh",
