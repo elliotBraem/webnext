@@ -1,6 +1,6 @@
 # Akaia Stellarfox
 
-A cloud offline-first operating system
+An advanced cross-platform embeddable NEAR BOS Gateway
 
 ## The only valid roadmap
 
