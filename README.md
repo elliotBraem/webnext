@@ -14,7 +14,7 @@ An advanced cross-platform embeddable NEAR BOS Gateway
 
 **webnext**: Decentralized backend, decentralized frontend, decentralized AI
 
-**counting becomes meaningless**: The Singularity
+**versioning becomes meaningless**: The Singularity
 
 ## Development setup
 
