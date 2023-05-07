@@ -1,5 +1,5 @@
 [package]
-name = "stellarfox_bootloader"
+name = "akaia-starfox"
 version = "0.2.0"
 edition = "2021"
 description = "A blockchain-driven cloud OS"

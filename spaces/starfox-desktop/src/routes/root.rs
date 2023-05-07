@@ -5,5 +5,5 @@ pub fn display(cx: Scope) -> Element {
 
 	let content: String = String::from(TEST);
 
-	render!(p { content })
+	render!(p { class: "bg-red flex p-0", content })
 }

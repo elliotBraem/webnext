@@ -39,42 +39,42 @@ command = "cargo"
 args = ["build", "--target", "wasm32-unknown-unknown", "--release", "--lib"]
 dependencies = ["clean"]
 
-[tasks.desktop-space-dev-build]
+[tasks.starfox-desktop-dev-build]
 workspace = false
 cwd = "./spaces/desktop/"
 command = "dioxus"
 args = ["build", "--platform", "web"]
 dependencies = ["dioxus-cli-setup"]
 
-[tasks.desktop-space-prod-build]
+[tasks.starfox-desktop-prod-build]
 workspace = false
 cwd = "./spaces/desktop/"
 command = "dioxus"
 args = ["build", "--platform", "web", "--release"]
 dependencies = ["dioxus-cli-setup"]
 
-[tasks.desktop-space-dev-serve]
+[tasks.starfox-desktop-dev-serve]
 workspace = false
 cwd = "./spaces/desktop/"
 command = "dioxus"
 args = ["serve", "--platform", "web", "--hot-reload", "--port", "1337"]
 dependencies = ["dioxus-cli-setup"]
 
-[tasks.promo-space-dev-build]
+[tasks.akaia-demo-dev-build]
 workspace = false
 cwd = "./spaces/promo/"
 command = "dioxus"
 args = ["build", "--platform", "web"]
 dependencies = ["dioxus-cli-setup"]
 
-[tasks.promo-space-prod-build]
+[tasks.akaia-demo-prod-build]
 workspace = false
 cwd = "./spaces/promo/"
 command = "dioxus"
 args = ["build", "--platform", "web", "--release"]
 dependencies = ["dioxus-cli-setup"]
 
-[tasks.promo-space-dev-serve]
+[tasks.akaia-demo-dev-serve]
 workspace = false
 cwd = "./spaces/promo/"
 command = "dioxus"
@@ -83,4 +83,4 @@ dependencies = ["dioxus-cli-setup"]
 
 [tasks.dev]
 workspace = false
-dependencies = ["desktop-space-dev-serve"]
+dependencies = ["starfox-desktop-dev-serve"]

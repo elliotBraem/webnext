@@ -1,8 +1,8 @@
 [package]
-name = "stellarfox-desktop-space"
+name = "starfox-desktop"
 version = "0.2.0"
 edition = "2021"
-description = "A desktop environment for Stellarfox"
+description = "A desktop environment for Starfox"
 readme = "README.md"
 categories = ["gui", "wasm"]
 authors = ["Carina root.akaia.near <carina@dmail.ai>"]
@@ -12,7 +12,7 @@ autotests = false
 autobenches = false
 
 [[bin]]
-name = "stellarfox-desktop-space"
+name = "starfox-desktop"
 path = "src/main.rs"
 
 [dependencies]
