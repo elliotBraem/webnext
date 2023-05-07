@@ -1,6 +1,23 @@
 [env]
 CARGO_MAKE_EXTEND_WORKSPACE_MAKEFILE = true
 
+[tasks.dioxus-cli-install]
+command = "cargo"
+args = ["install", "--git", "https://github.com/mrxiaozhuox/dioxus-cli"]
+
+[tasks.dioxus-cli-plugin-tailwind-install]
+command = "dioxus"
+args = [
+	"plugin",
+	"add",
+	"--git",
+	"https://github.com/DioxusPluginCommunity/tailwind-plugin",
+]
+dependencies = ["dioxus-cli-install"]
+
+[tasks.dioxus-cli-plugins-install]
+dependencies = ["dioxus-cli-plugin-tailwind-install"]
+
 [tasks.format]
 install_crate = "rustfmt"
 command = "cargo"
@@ -17,42 +34,42 @@ dependencies = ["clean"]
 
 [tasks.desktop-space-dev-build]
 workspace = false
-install_script = "cargo install --git https://github.com/DioxusLabs/cli"
+install_script = "cargo install --git https://github.com/mrxiaozhuox/dioxus-cli"
 cwd = "./spaces/desktop/"
 command = "dioxus"
 args = ["build", "--platform", "web"]
 
 [tasks.desktop-space-prod-build]
 workspace = false
-install_script = "cargo install --git https://github.com/DioxusLabs/cli"
+install_script = "cargo install --git https://github.com/mrxiaozhuox/dioxus-cli"
 cwd = "./spaces/desktop/"
 command = "dioxus"
 args = ["build", "--platform", "web", "--release"]
 
 [tasks.desktop-space-dev-serve]
 workspace = false
-install_script = "cargo install --git https://github.com/DioxusLabs/cli"
 cwd = "./spaces/desktop/"
 command = "dioxus"
 args = ["serve", "--platform", "web", "--hot-reload", "--port", "1337"]
+dependencies = ["dioxus-cli-plugins-install"]
 
 [tasks.promo-space-dev-build]
 workspace = false
-install_script = "cargo install --git https://github.com/DioxusLabs/cli"
+install_script = "cargo install --git https://github.com/mrxiaozhuox/dioxus-cli"
 cwd = "./spaces/promo/"
 command = "dioxus"
 args = ["build", "--platform", "web"]
 
 [tasks.promo-space-prod-build]
 workspace = false
-install_script = "cargo install --git https://github.com/DioxusLabs/cli"
+install_script = "cargo install --git https://github.com/mrxiaozhuox/dioxus-cli"
 cwd = "./spaces/promo/"
 command = "dioxus"
 args = ["build", "--platform", "web", "--release"]
 
 [tasks.promo-space-dev-serve]
 workspace = false
-install_script = "cargo install --git https://github.com/DioxusLabs/cli"
+install_script = "cargo install --git https://github.com/mrxiaozhuox/dioxus-cli"
 cwd = "./spaces/promo/"
 command = "dioxus"
 args = ["serve", "--platform", "web", "--hot-reload", "--port", "1337"]
