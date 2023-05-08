@@ -42,10 +42,4 @@ rustup component add clippy && cargo install cargo-modules
 
 A full-stack web4 application framework inspired by DDD, Fractal Design, and Hexagonal Architecture
 
-## web4 deploy
-
-Using [near-cli-rs](https://near.cli.rs) you can deploy the contract to your account:
-
-```bash
-near-cli contract deploy web4.akaia.near use-file ./target/wasm32-unknown-unknown/release/akaia-promo.wasm without-init-call network-config mainnet
-```
+...tbd...
