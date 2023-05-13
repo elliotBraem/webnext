@@ -41,42 +41,42 @@ dependencies = ["clean"]
 
 [tasks.starfox-desktop-dev-build]
 workspace = false
-cwd = "./spaces/starfox-desktop/"
+cwd = "./space/starfox-desktop/"
 command = "dioxus"
 args = ["build", "--platform", "web"]
 dependencies = ["dioxus-cli-setup"]
 
 [tasks.starfox-desktop-prod-build]
 workspace = false
-cwd = "./spaces/starfox-desktop/"
+cwd = "./space/starfox-desktop/"
 command = "dioxus"
 args = ["build", "--platform", "web", "--release"]
 dependencies = ["dioxus-cli-setup"]
 
 [tasks.starfox-desktop-dev-serve]
 workspace = false
-cwd = "./spaces/starfox-desktop/"
+cwd = "./space/starfox-desktop/"
 command = "dioxus"
 args = ["serve", "--platform", "web", "--hot-reload", "--port", "1337"]
 dependencies = ["dioxus-cli-setup"]
 
 [tasks.akaia-demo-dev-build]
 workspace = false
-cwd = "./spaces/akaia-demo/"
+cwd = "./space/akaia-demo/"
 command = "dioxus"
 args = ["build", "--platform", "web"]
 dependencies = ["dioxus-cli-setup"]
 
 [tasks.akaia-demo-prod-build]
 workspace = false
-cwd = "./spaces/akaia-demo/"
+cwd = "./space/akaia-demo/"
 command = "dioxus"
 args = ["build", "--platform", "web", "--release"]
 dependencies = ["dioxus-cli-setup"]
 
 [tasks.akaia-demo-dev-serve]
 workspace = false
-cwd = "./spaces/akaia-demo/"
+cwd = "./space/akaia-demo/"
 command = "dioxus"
 args = ["serve", "--platform", "web", "--hot-reload", "--port", "1337"]
 dependencies = ["dioxus-cli-setup"]

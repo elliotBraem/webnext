@@ -2,7 +2,7 @@
 name = "akaia-starfox"
 version = "0.2.0"
 edition = "2021"
-description = "A blockchain-driven cloud OS"
+description = "An advanced cross-platform embeddable NEAR BOS Gateway"
 readme = "README.md"
 categories = ["gui", "wasm"]
 authors = ["Carina root.akaia.near <carina@dmail.ai>"]
