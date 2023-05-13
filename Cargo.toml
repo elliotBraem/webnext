@@ -1,9 +1,9 @@
 [workspace]
 members = [
-	"entities/dao/sputnik-staking",
-	"entities/dao/sputnikdao2",
-	"entities/dao/sputnikdao-factory2",
-	"entities/dao/test-token",
+	"entity/sputnik-dao/sputnik-staking",
+	"entity/sputnik-dao/sputnikdao2",
+	"entity/sputnik-dao/sputnikdao-factory2",
+	"entity/sputnik-dao/test-token",
 	"spaces/starfox-desktop",
 	"spaces/akaia-demo",
 ]
