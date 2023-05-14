@@ -1,15 +1,9 @@
 [submodule "core/service/near-state-indexer"]
 	path = core/service/near-state-indexer
 	url = https://github.com/near-akaia/akaia.core.service.near-state-indexer.git
-[submodule "core/adapter/nearfs"]
-	path = core/adapter/nearfs
-	url = https://github.com/near-akaia/akaia.core.adapter.nearfs.git
 [submodule "core/service/keypom"]
 	path = core/service/keypom
 	url = https://github.com/near-akaia/akaia.core.service.keypom.git
-[submodule "core/adapter/composedb"]
-	path = core/adapter/composedb
-	url = https://github.com/near-akaia/akaia.core.adapter.composedb.git
 [submodule "entity/sputnik-dao"]
 	path = entity/sputnik-dao
 	url = https://github.com/near-akaia/akaia.entity.sputnik-dao.git
@@ -55,3 +49,12 @@
 [submodule "core/service/web4-http-gateway"]
 	path = core/service/web4-http-gateway
 	url = https://github.com/near-akaia/akaia.core.service.web4-http-gateway.git
+[submodule "core/utility/ceramic-wheel"]
+	path = core/utility/ceramic-wheel
+	url = https://github.com/near-akaia/akaia.core.utility.ceramic-wheel.git
+[submodule "core/adapter/composedb"]
+	path = core/adapter/composedb
+	url = https://github.com/near-akaia/akaia.core.adapter.composedb.git
+[submodule "core/adapter/nearfs"]
+	path = core/adapter/nearfs
+	url = https://github.com/near-akaia/akaia.core.adapter.nearfs.git
