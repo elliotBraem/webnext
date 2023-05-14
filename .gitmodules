@@ -40,3 +40,21 @@
 [submodule "core/utility/web4-deploy"]
 	path = core/utility/web4-deploy
 	url = https://github.com/near-akaia/akaia.core.utility.web4-deploy.git
+[submodule "core/service/iroh"]
+	path = core/service/iroh
+	url = https://github.com/near-akaia/akaia.core.service.iroh
+[submodule "core/runtime/deno"]
+	path = core/runtime/deno
+	url = https://github.com/near-akaia/akaia.core.runtime.deno.git
+[submodule "core/lib/jetpack-nixos"]
+	path = core/lib/jetpack-nixos
+	url = https://github.com/near-akaia/akaia.core.lib.jetpack-nixos.git
+[submodule "core/service/sozu"]
+	path = core/service/sozu
+	url = https://github.com/near-akaia/akaia.core.service.sozu.git
+[submodule "core/provider/near-social-bridge"]
+	path = core/provider/near-social-bridge
+	url = https://github.com/near-akaia/akaia.core.provider.near-social-bridge.git
+[submodule "core/service/near-telegram-updater"]
+	path = core/service/near-telegram-updater
+	url = https://github.com/near-akaia/akaia.core.service.near-telegram-updater.git
