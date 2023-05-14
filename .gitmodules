@@ -1,18 +1,9 @@
 [submodule "core/service/near-state-indexer"]
 	path = core/service/near-state-indexer
 	url = https://github.com/near-akaia/akaia.core.service.near-state-indexer.git
-[submodule "core/service/fast-near"]
-	path = core/service/fast-near
-	url = https://github.com/near-akaia/akaia.core.service.fast-near.git
-[submodule "core/service/web4"]
-	path = core/service/web4
-	url = https://github.com/near-akaia/akaia.core.service.web4.git
 [submodule "core/adapter/nearfs"]
 	path = core/adapter/nearfs
 	url = https://github.com/near-akaia/akaia.core.adapter.nearfs.git
-[submodule "core/service/web4"]
-	path = core/service/web4
-	url = https://github.com/near-akaia/akaia.core.service.web4.git
 [submodule "core/service/keypom"]
 	path = core/service/keypom
 	url = https://github.com/near-akaia/akaia.core.service.keypom.git
@@ -58,3 +49,9 @@
 [submodule "core/service/near-telegram-updater"]
 	path = core/service/near-telegram-updater
 	url = https://github.com/near-akaia/akaia.core.service.near-telegram-updater.git
+[submodule "core/service/fast-near"]
+	path = core/service/fast-near
+	url = https://github.com/near-akaia/akaia.core.service.fast-near.git
+[submodule "core/service/web4-http-gateway"]
+	path = core/service/web4-http-gateway
+	url = https://github.com/near-akaia/akaia.core.service.web4-http-gateway.git
