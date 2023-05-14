@@ -7,9 +7,6 @@
 [submodule "core/service/web4"]
 	path = core/service/web4
 	url = https://github.com/near-akaia/akaia.core.service.web4.git
-[submodule "core/service/web4-deploy"]
-	path = core/service/web4-deploy
-	url = https://github.com/near-akaia/akaia.core.service.web4-deploy.git
 [submodule "core/adapter/nearfs"]
 	path = core/adapter/nearfs
 	url = https://github.com/near-akaia/akaia.core.adapter.nearfs.git
@@ -40,3 +37,6 @@
 [submodule "core/utility/near-cli-rs"]
 	path = core/utility/near-cli-rs
 	url = https://github.com/near-akaia/akaia.core.utility.near-cli-rs.git
+[submodule "core/utility/web4-deploy"]
+	path = core/utility/web4-deploy
+	url = https://github.com/near-akaia/akaia.core.utility.web4-deploy.git
