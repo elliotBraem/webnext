@@ -16,9 +16,6 @@
 [submodule "core/service/web4"]
 	path = core/service/web4
 	url = https://github.com/near-akaia/akaia.core.service.web4.git
-[submodule "core/service/croncat"]
-	path = core/service/croncat
-	url = https://github.com/near-akaia/akaia.core.service.croncat.git
 [submodule "core/service/keypom"]
 	path = core/service/keypom
 	url = https://github.com/near-akaia/akaia.core.service.keypom.git
