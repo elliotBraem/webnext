@@ -6,7 +6,7 @@ The only Akaia's superproject.
 
 **web2**: Centralized backend, centralized frontend, centralized AI
 
-**web3**: Backend decentralized only for most critical parts, centralized frontend, centralized AI
+**web3**: Backend decentralized only for most critical parts, ( sometimes ) decentralized frontend, centralized AI
 
 \> you are here <
 
