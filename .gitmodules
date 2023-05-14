@@ -37,3 +37,6 @@
 [submodule "core/service/multicall"]
 	path = core/service/multicall
 	url = https://github.com/near-akaia/akaia.core.service.multicall
+[submodule "core/service/croncat-rs"]
+	path = core/service/croncat-rs
+	url = https://github.com/near-akaia/akaia.core.service.croncat-rs.git
