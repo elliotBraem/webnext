@@ -33,11 +33,13 @@
 		"ipapp",
 		"jsxdev",
 		"keychain",
+		"Megastructure",
 		"roadmap",
 		"rustup",
 		"rxrust",
 		"Starfox",
 		"subroutes",
+		"superproject",
 		"unocss"
 	],
 	"[python]": {

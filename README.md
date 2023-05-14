@@ -1,6 +1,6 @@
-# Akaia Starfox
+# 🪐 Megastructure
 
-An advanced cross-platform embeddable NEAR BOS Gateway
+The only Akaia's superproject.
 
 ## The only valid roadmap
 
