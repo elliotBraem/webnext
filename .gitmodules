@@ -37,3 +37,6 @@
 [submodule "core/service/croncat-rs"]
 	path = core/service/croncat-rs
 	url = https://github.com/near-akaia/akaia.core.service.croncat-rs.git
+[submodule "core/utility/near-cli-rs"]
+	path = core/utility/near-cli-rs
+	url = https://github.com/near-akaia/akaia.core.utility.near-cli-rs.git
