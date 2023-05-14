@@ -10,9 +10,9 @@ The only Akaia's superproject.
 
 \> you are here <
 
-**web4**: Decentralized backend, decentralized frontend, centralized AI
+**web4**: Decentralized backend, decentralized frontend, partially decentralized AI, centralized networking
 
-**webnext**: Decentralized backend, decentralized frontend, decentralized AI
+**webnext**: Decentralized backend, decentralized frontend, decentralized AI, decentralized networking
 
 **versioning becomes meaningless**: The Singularity
 
