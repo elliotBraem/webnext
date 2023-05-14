@@ -2,7 +2,7 @@
 
 The only Akaia's superproject.
 
-## The only valid roadmap
+## Roadmap
 
 **web2**: Centralized backend, centralized frontend, centralized AI
 
