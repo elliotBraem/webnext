@@ -34,3 +34,6 @@
 [submodule "core/service/multicall"]
 	path = core/service/multicall
 	url = https://github.com/near-akaia/akaia.core.service.multicall.git
+[submodule "core/service/bark"]
+	path = core/service/bark
+	url = https://github.com/near-akaia/akaia.core.service.bark.git
