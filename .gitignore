@@ -1,4 +1,5 @@
 .DS_Store
+**/fish_history
 **/logs
 *.log
 **/target
