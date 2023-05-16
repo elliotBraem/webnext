@@ -1,5 +1,5 @@
 [package]
-name = "akaia-starfox"
+name = "akaia-starfox-web4"
 version = "0.2.0"
 edition = "2021"
 description = "An advanced cross-platform embeddable NEAR BOS Gateway"

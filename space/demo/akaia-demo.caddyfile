@@ -1,6 +1,6 @@
 https://akaia.run, http://nano.akaia, http://demo.akaia {
 	# Set this path to your site's directory.
-	root * /home/akaia/space/akaia-demo-static
+	root * /akaia/space/demo
 
 	# Enable the static file server.
 	file_server

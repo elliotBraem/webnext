@@ -4,8 +4,8 @@ members = [
 	"entity/sputnik-dao/sputnikdao2",
 	"entity/sputnik-dao/sputnikdao-factory2",
 	"entity/sputnik-dao/test-token",
-	"space/starfox-desktop",
-	"space/akaia-demo",
+	"space/starfox",
+	"space/demo",
 ]
 
 [workspace.package]

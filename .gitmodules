@@ -4,9 +4,6 @@
 [submodule "core/service/keypom"]
 	path = core/service/keypom
 	url = https://github.com/near-akaia/akaia.core.service.keypom.git
-[submodule "entity/sputnik-dao"]
-	path = entity/sputnik-dao
-	url = https://github.com/near-akaia/akaia.entity.sputnik-dao.git
 [submodule "core/service/bark"]
 	path = core/service/bark
 	url = https://github.com/near-akaia/akaia.core.service.bark.git
@@ -64,3 +61,6 @@
 [submodule "core/utility/handout"]
 	path = core/utility/handout
 	url = https://github.com/near-akaia/akaia.core.utility.handout.git
+[submodule "entity/sputnik-dao"]
+	path = entity/sputnik-dao
+	url = https://github.com/near-akaia/akaia.entity.sputnik-dao.git
