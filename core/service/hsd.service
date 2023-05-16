@@ -7,7 +7,7 @@ Type=simple
 Restart=always
 RestartSec=1
 User=root
-ExecStart="/bin/bash /usr/bin/node /akaia/core/service/hns/bin/hsd --config /akaia/core/config/handshake-ns/hsd.conf"
+ExecStart=/usr/bin/node /akaia/core/service/hns/bin/hsd --config /akaia/core/config/handshake-ns/hsd.conf
 
 [Install]
 WantedBy=multi-user.target
