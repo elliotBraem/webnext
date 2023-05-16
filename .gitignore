@@ -1,4 +1,5 @@
 .DS_Store
+.git-credentials
 **/fish_history
 **/logs
 *.log
