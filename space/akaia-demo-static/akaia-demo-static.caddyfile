@@ -1,4 +1,4 @@
-nano.akaia, demo.akaia {
+https://akaia.run, http://nano.akaia, http://demo.akaia {
 	# Set this path to your site's directory.
 	root * /home/akaia/space/akaia-demo-static
 
