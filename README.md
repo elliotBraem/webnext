@@ -1,5 +1,9 @@
 # 🪐 webnext
 
+A proof of concept on Akaia's vision of the future web.
+
+Implemented as git superproject and contains both development / infrastructure tools and the source code.
+
 ## Roadmap
 
 **web2**: Centralized backend, centralized frontend, centralized AI
