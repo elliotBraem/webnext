@@ -64,3 +64,6 @@
 [submodule "entity/sputnik-dao"]
 	path = entity/sputnik-dao
 	url = https://github.com/near-akaia/akaia.entity.sputnik-dao.git
+[submodule "space/etherpad"]
+	path = space/etherpad
+	url = https://github.com/near-akaia/akaia.space.etherpad
