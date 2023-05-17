@@ -41,7 +41,8 @@
 		"Starfox",
 		"subroutes",
 		"superproject",
-		"unocss"
+		"unocss",
+		"webnext"
 	],
 	"[python]": {
 		"editor.defaultFormatter": "ms-python.autopep8"

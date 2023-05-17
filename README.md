@@ -1,6 +1,4 @@
-# 🪐 Megastructure
-
-The only Akaia's superproject.
+# 🪐 webnext
 
 ## Roadmap
 
