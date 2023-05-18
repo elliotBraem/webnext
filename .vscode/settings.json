@@ -17,7 +17,7 @@
 		"strings": "off"
 	},
 	"deno.enable": true,
-	"deno.importMap": "core/configuration/import-map.json",
+	"deno.importMap": "core/config/import-map.json",
 	"deno.lint": true,
 	"explorer.sortOrder": "filesFirst",
 	"rust-analyzer.check.command": "clippy",
