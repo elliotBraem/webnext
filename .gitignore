@@ -1,9 +1,10 @@
 .DS_Store
 .git-credentials
-**/fish_history
+**/*_history
 **/logs
 *.log
 **/target
 **/res
 **/dist
+**/*generated*
 Cargo.lock
