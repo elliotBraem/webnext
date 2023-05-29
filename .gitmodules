@@ -25,9 +25,6 @@
 [submodule "core/service/iroh"]
 	path = core/service/iroh
 	url = https://github.com/near-akaia/akaia.core.service.iroh
-[submodule "core/runtime/deno"]
-	path = core/runtime/deno
-	url = https://github.com/near-akaia/akaia.core.runtime.deno.git
 [submodule "core/lib/jetpack-nixos"]
 	path = core/lib/jetpack-nixos
 	url = https://github.com/near-akaia/akaia.core.lib.jetpack-nixos.git
@@ -67,9 +64,6 @@
 [submodule "space/etherpad"]
 	path = space/etherpad
 	url = https://github.com/near-akaia/akaia.space.etherpad
-[submodule "core/runtime"]
-	path = core/runtime
-	url = https://github.com/near-akaia/webnext.core.runtime
 [submodule "core/utility/coreutils"]
 	path = core/utility/coreutils
 	url = https://github.com/near-akaia/webnext.core.utility.coreutils.git
@@ -100,3 +94,6 @@
 [submodule "core/utility/speedtest-rs"]
 	path = core/utility/speedtest-rs
 	url = https://github.com/near-akaia/webnext.core.utility.speedtest-rs
+[submodule "core/runtime/rtx"]
+	path = core/runtime/rtx
+	url = https://github.com/near-akaia/webnext.core.runtime.rtx
