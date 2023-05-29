@@ -73,3 +73,30 @@
 [submodule "core/utility/coreutils"]
 	path = core/utility/coreutils
 	url = https://github.com/near-akaia/webnext.core.utility.coreutils.git
+[submodule "core/utility/dust"]
+	path = core/utility/dust
+	url = https://github.com/near-akaia/webnext.core.utility.dust.git
+[submodule "core/utility/bat"]
+	path = core/utility/bat
+	url = https://github.com/near-akaia/webnext.core.utility.bat.git
+[submodule "core/utility/zellij"]
+	path = core/utility/zellij
+	url = https://github.com/near-akaia/webnext.core.utility.zellij.git
+[submodule "core/utility/mprocs"]
+	path = core/utility/mprocs
+	url = https://github.com/near-akaia/webnext.core.utility.mprocs.git
+[submodule "core/utility/ripgrep"]
+	path = core/utility/ripgrep
+	url = https://github.com/near-akaia/webnext.core.utility.ripgrep.git
+[submodule "core/utility/gitui"]
+	path = core/utility/gitui
+	url = https://github.com/near-akaia/webnext.core.utility.gitui
+[submodule "core/utility/irust"]
+	path = core/utility/irust
+	url = https://github.com/near-akaia/webnext.core.utility.irust.git
+[submodule "core/utility/cargo-info"]
+	path = core/utility/cargo-info
+	url = https://github.com/near-akaia/webnext.core.utility.cargo-info
+[submodule "core/utility/speedtest-rs"]
+	path = core/utility/speedtest-rs
+	url = https://github.com/near-akaia/webnext.core.utility.speedtest-rs
