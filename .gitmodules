@@ -70,3 +70,6 @@
 [submodule "core/runtime"]
 	path = core/runtime
 	url = https://github.com/near-akaia/webnext.core.runtime
+[submodule "core/utility/coreutils"]
+	path = core/utility/coreutils
+	url = https://github.com/near-akaia/webnext.core.utility.coreutils.git
