@@ -1,9 +1,9 @@
 {
 	"default_prompts": {
 		"text": "I don't know what to say",
-		"voice": "v2/de_speaker_8"
+		"voice": "en_speaker_3"
 	},
 	"default_temperatures": {
-		"text": 0.3
+		"text": 0.6
 	}
 }
