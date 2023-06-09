@@ -97,3 +97,6 @@
 [submodule "core/runtime/rtx"]
 	path = core/runtime/rtx
 	url = https://github.com/near-akaia/webnext.core.runtime.rtx
+[submodule "core/utility/cavif-rs"]
+	path = core/utility/cavif-rs
+	url = https://github.com/near-akaia/webnext.core.utility.cavif-rs
