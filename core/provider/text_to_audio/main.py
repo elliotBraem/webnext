@@ -1,18 +1,21 @@
 import sys
-sys.path.append('../bark')  # nopep8
+import os
+
+sys.path.append(os.path.abspath(os.path.join(
+                os.path.dirname(__file__), '../../service/bark'))
+)  # nopep8
+from bark import SAMPLE_RATE, generate_audio, preload_models
 
 from IPython.display import Audio
 import json
 import subprocess
-import os
 from scipy.io.wavfile import write as write_wav
-from bark import SAMPLE_RATE, generate_audio, preload_models
 
-os.environ["SUNO_OFFLOAD_CPU"] = "True"
-os.environ["SUNO_USE_SMALL_MODELS"] = "True"
+# os.environ.setdefault("SUNO_OFFLOAD_CPU", "True")
+# os.environ.setdefault("SUNO_USE_SMALL_MODELS", "True")
 
-# os.environ["XDG_CACHE_HOME"] = os.path.join(
-#     os.path.dirname(__file__), "../../../.cache")
+os.environ.setdefault("XDG_CACHE_HOME", os.path.abspath(os.path.join(
+    os.path.dirname(__file__), "../../../.cache")))
 
 with open(os.path.join(
     os.path.dirname(__file__), "../../config/suno-bark.config.json")
@@ -26,7 +29,7 @@ preload_models()
 def say(
     phrase=config["default_prompts"]["text"],
     voice=config["default_prompts"]["voice"],
-    temperature=config["default_prompts"]["voice"]
+    temperature=config["default_temperatures"]["text"]
 ):
     print(f"Saying {phrase} ...")
 
@@ -41,6 +44,6 @@ def say(
 
 
 if len(sys.argv) > 1:
-    say(sys.argv[1], sys.argv[2], sys.argv[3])
+    say(sys.argv[1])
 else:
     say()
