@@ -37,11 +37,13 @@
 		"Megastructure",
 		"mplayer",
 		"Namebase",
+		"nopep",
 		"roadmap",
 		"rustup",
 		"rxrust",
 		"Starfox",
 		"subroutes",
+		"SUNO",
 		"superproject",
 		"unocss",
 		"webnext"
@@ -49,5 +51,6 @@
 	"[python]": {
 		"editor.defaultFormatter": "ms-python.autopep8"
 	},
-	"python.formatting.provider": "none"
+	"python.formatting.provider": "none",
+	"python.analysis.typeCheckingMode": "basic"
 }
