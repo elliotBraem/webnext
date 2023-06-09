@@ -11,8 +11,6 @@ import json
 import subprocess
 from scipy.io.wavfile import write as write_wav
 
-# os.environ.setdefault("SUNO_OFFLOAD_CPU", "True")
-# os.environ.setdefault("SUNO_USE_SMALL_MODELS", "True")
 
 os.environ.setdefault("XDG_CACHE_HOME", os.path.abspath(os.path.join(
     os.path.dirname(__file__), "../../../.cache")))
@@ -39,8 +37,8 @@ def say(
     subprocess.run(["mplayer", "output.wav"])
 
     # Converting to Telegram's native voice message format
-    # subprocess.run(["ffmpeg", "-y", "-i", "output.wav", "-c:a",
-    #                "libopus", "-b:a", "160k", "output.ogg"])
+    subprocess.run(["ffmpeg", "-y", "-i", "output.wav", "-c:a",
+                   "libopus", "-b:a", "160k", "output.ogg"])
 
 
 if len(sys.argv) > 1:
