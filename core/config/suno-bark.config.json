@@ -1,7 +1,7 @@
 {
 	"default_prompts": {
 		"text": "I don't know what to say",
-		"voice": "en_speaker_3"
+		"voice": "/Users/karina/akaia/webnext/core/provider/text_to_audio/female_8.npz"
 	},
 	"default_temperatures": {
 		"text": 0.6

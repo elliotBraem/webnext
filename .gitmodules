@@ -100,3 +100,6 @@
 [submodule "core/service/bark"]
 	path = core/service/bark
 	url = https://github.com/near-akaia/webnext.core.service.bark
+[submodule "space/everything"]
+	path = space/everything
+	url = https://github.com/near-akaia/webnext.space.everything
