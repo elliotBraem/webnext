@@ -9,3 +9,4 @@
 **/*generated*
 Cargo.lock
 **/.cache
+**/output.*
