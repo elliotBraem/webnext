@@ -1,9 +1,11 @@
 use dioxus::prelude::*;
 
-pub fn display(cx: Scope) -> Element {
+pub fn page(cx: Scope) -> Element {
 	const TEST: &str = "Hello Rust community!";
 
 	let content: String = String::from(TEST);
 
-	render!(p { class: "bg-red flex p-0", content })
+	render!(
+    p { class: "bg-red flex p-0", content }
+)
 }

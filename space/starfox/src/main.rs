@@ -9,13 +9,13 @@ fn main() {
 }
 
 fn Desktop(cx: Scope) -> Element {
-	render!(DesktopRouter {})
+	render!( DesktopRouter {} )
 }
 
 fn DesktopRouter(cx: Scope) -> Element {
 	render! (
-			Router {
-					Route { to: "/", routes::root::display {} }
-			}
-	)
+    Router {
+        Route { to: "/", routes::root::page {} }
+    }
+)
 }
