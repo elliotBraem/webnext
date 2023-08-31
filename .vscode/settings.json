@@ -30,7 +30,7 @@
 		"postcss": "css"
 	},
 	"editor.semanticHighlighting.enabled": true,
-	"deno.enable": true,
+	"deno.enable": false,
 	"deno.importMap": "core/config/import-map.json",
 	"deno.lint": true,
 	"explorer.sortOrder": "filesFirst",
@@ -80,5 +80,14 @@
 		"editor.defaultFormatter": "ms-python.autopep8"
 	},
 	"python.formatting.provider": "none",
-	"python.analysis.typeCheckingMode": "basic"
+	"python.analysis.typeCheckingMode": "basic",
+	"files.exclude": {
+		"**/.git": false,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/CVS": true,
+		"**/.DS_Store": true,
+		"**/Thumbs.db": true,
+		"**/node_modules": true
+	}
 }

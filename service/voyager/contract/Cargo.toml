@@ -1,0 +1,19 @@
+[package]
+name = "voyager-near-contract"
+version = "0.2.0"
+edition = "2021"
+description = "NEAR Protocol smart contract for AKAIA Voyager"
+readme = "README.md"
+categories = ["gui", "wasm"]
+authors = ["Carina.Akaia.near <carina@dmail.ai>"]
+autobins = false
+autoexamples = false
+autotests = false
+autobenches = false
+
+[dependencies]
+near-sdk = "4.0.0-pre.7"
+
+[lib]
+crate-type = ["cdylib"]
+path = "main.rs"

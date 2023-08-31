@@ -1,30 +1,6 @@
 [env]
 CARGO_MAKE_EXTEND_WORKSPACE_MAKEFILE = true
 
-[tasks.dioxus-cli-install]
-command = "cargo"
-args = ["install", "--git", "https://github.com/mrxiaozhuox/dioxus-cli"]
-
-[tasks.dioxus-cli-plugin-system-init]
-command = "dioxus"
-args = ["plugin", "init"]
-dependencies = ["dioxus-cli-install"]
-
-[tasks.dioxus-cli-plugin-tailwind-install]
-command = "dioxus"
-args = [
-	"plugin",
-	"add",
-	"--git",
-	"https://github.com/DioxusPluginCommunity/tailwind-plugin",
-]
-dependencies = ["dioxus-cli-plugin-system-init"]
-
-[tasks.dioxus-cli-setup]
-command = "echo"
-args = ["Installing plugins..."]
-dependencies = ["dioxus-cli-plugin-tailwind-install"]
-
 [tasks.format]
 install_crate = "rustfmt"
 command = "cargo"
@@ -39,48 +15,27 @@ command = "cargo"
 args = ["build", "--target", "wasm32-unknown-unknown", "--release", "--lib"]
 dependencies = ["clean"]
 
-[tasks.starfox-desktop-dev-build]
+[tasks.voyager-client-dev-build]
 workspace = false
-cwd = "./space/starfox-desktop/"
+cwd = "./service/voyager/client/web/"
 command = "dioxus"
 args = ["build", "--platform", "web"]
 dependencies = ["dioxus-cli-setup"]
 
-[tasks.starfox-desktop-prod-build]
+[tasks.voyager-client-prod-build]
 workspace = false
-cwd = "./space/starfox-desktop/"
+cwd = "./service/voyager/client/web/"
 command = "dioxus"
 args = ["build", "--platform", "web", "--release"]
 dependencies = ["dioxus-cli-setup"]
 
-[tasks.starfox-desktop-dev-serve]
+[tasks.voyager-client-dev-serve]
 workspace = false
-cwd = "./space/starfox-desktop/"
-command = "dioxus"
-args = ["serve", "--platform", "web", "--hot-reload", "--port", "1337"]
-dependencies = ["dioxus-cli-setup"]
-
-[tasks.akaia-demo-dev-build]
-workspace = false
-cwd = "./space/akaia-demo/"
-command = "dioxus"
-args = ["build", "--platform", "web"]
-dependencies = ["dioxus-cli-setup"]
-
-[tasks.akaia-demo-prod-build]
-workspace = false
-cwd = "./space/akaia-demo/"
-command = "dioxus"
-args = ["build", "--platform", "web", "--release"]
-dependencies = ["dioxus-cli-setup"]
-
-[tasks.akaia-demo-dev-serve]
-workspace = false
-cwd = "./space/akaia-demo/"
+cwd = "./service/voyager/client/web/"
 command = "dioxus"
 args = ["serve", "--platform", "web", "--hot-reload", "--port", "1337"]
 dependencies = ["dioxus-cli-setup"]
 
 [tasks.dev]
 workspace = false
-dependencies = ["starfox-desktop-dev-serve"]
+dependencies = ["voyager-client-dev-serve"]
