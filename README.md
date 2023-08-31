@@ -39,9 +39,3 @@ asdf install && cargo install cargo-make
 ```bash
 rustup component add clippy && cargo install cargo-modules
 ```
-
-#### Fractality framework specification
-
-A full-stack web4 application framework inspired by DDD, Fractal Design, and Hexagonal Architecture
-
-...tbd...
