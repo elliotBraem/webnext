@@ -22,7 +22,7 @@ Implemented as git superproject and contains both development / infrastructure t
 
 ### Infrastructure
 
-#### Version manager
+#### Runtime manager
 
 <https://asdf-vm.com/guide/getting-started.html>
 
