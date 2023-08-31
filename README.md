@@ -32,6 +32,7 @@ Implemented as git superproject and contains both development / infrastructure t
 
 ```bash
 asdf install && cargo install cargo-make
+corepack enable && corepack prepare pnpm@latest --activate
 ```
 
 #### Advanced development tools
