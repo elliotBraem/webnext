@@ -55,12 +55,6 @@
 [submodule "core/utility/handout"]
 	path = core/utility/handout
 	url = https://github.com/near-akaia/akaia.core.utility.handout.git
-[submodule "entity/sputnik-dao"]
-	path = entity/sputnik-dao
-	url = https://github.com/near-akaia/akaia.entity.sputnik-dao.git
-[submodule "space/etherpad"]
-	path = space/etherpad
-	url = https://github.com/near-akaia/akaia.space.etherpad
 [submodule "core/utility/coreutils"]
 	path = core/utility/coreutils
 	url = https://github.com/near-akaia/webnext.core.utility.coreutils.git
@@ -100,6 +94,4 @@
 [submodule "core/service/bark"]
 	path = core/service/bark
 	url = https://github.com/near-akaia/webnext.core.service.bark
-[submodule "space/everything"]
-	path = space/everything
-	url = https://github.com/near-akaia/webnext.space.everything
+

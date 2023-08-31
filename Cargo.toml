@@ -1,12 +1,5 @@
 [workspace]
-members = [
-	"entity/sputnik-dao/sputnik-staking",
-	"entity/sputnik-dao/sputnikdao2",
-	"entity/sputnik-dao/sputnikdao-factory2",
-	"entity/sputnik-dao/test-token",
-	"space/starfox",
-	"space/demo",
-]
+# members = ["space/starfox"]
 
 [workspace.package]
 keywords = ["web4", "cloud", "ai-powered", "os"]

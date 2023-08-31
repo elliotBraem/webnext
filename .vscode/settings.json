@@ -4,22 +4,41 @@
 		"editor.formatOnSave": true
 	},
 	"[typescript]": {
-		"editor.defaultFormatter": "denoland.vscode-deno",
+		"editor.defaultFormatter": "rome.rome",
 		"editor.formatOnSave": true
 	},
 	"[typescriptreact]": {
-		"editor.defaultFormatter": "denoland.vscode-deno",
+		"editor.defaultFormatter": "rome.rome",
 		"editor.formatOnSave": true
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "rome.rome",
+	},
+	"[html]": {
+		"editor.defaultFormatter": "vscode.html-language-features",
 	},
 	"editor.quickSuggestions": {
 		"other": "on",
 		"comments": true,
-		"strings": "off"
+		"strings": true
 	},
+	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.organizeImports.rome": true
+	},
+	"emmet.includeLanguages": {
+		"postcss": "css"
+	},
+	"editor.semanticHighlighting.enabled": true,
 	"deno.enable": true,
 	"deno.importMap": "core/config/import-map.json",
 	"deno.lint": true,
 	"explorer.sortOrder": "filesFirst",
+	"files.associations": {
+		".asdfrc": "ini",
+		"*.css": "tailwindcss"
+	},
+	"files.eol": "\n",
 	"rust-analyzer.check.command": "clippy",
 	"cSpell.words": [
 		"Basestar",
@@ -46,7 +65,16 @@
 		"SUNO",
 		"superproject",
 		"unocss",
-		"webnext"
+		"webnext",
+		"Attributify",
+		"getr",
+		"iconify",
+		"nearfi",
+		"openmoji",
+		"pnpx",
+		"unbundle",
+		"unocss",
+		"wendersonpires"
 	],
 	"[python]": {
 		"editor.defaultFormatter": "ms-python.autopep8"

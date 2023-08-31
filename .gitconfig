@@ -1,9 +1,0 @@
-[init]
-	defaultBranch = main
-[safe]
-	directory = /akaia/core/service/hns
-[credential]
-	helper = store
-[user]
-	email = anonymous@mail.akaia
-	name = Anonymous

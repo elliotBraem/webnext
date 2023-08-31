@@ -10,3 +10,5 @@
 Cargo.lock
 **/.cache
 **/output.*
+**/node_modules
+*.local
