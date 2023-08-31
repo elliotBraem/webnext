@@ -1,6 +1,6 @@
 # 🪐 webnext
 
-A proof of concept on Akaia's vision of the future web.
+A proof of concept on AKAIA's vision of the future web.
 
 Implemented as git superproject and contains both development / infrastructure tools and the source code.
 
