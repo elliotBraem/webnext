@@ -44,7 +44,7 @@ export const CatalogTemplate = ({ ...props }) => {
 					].map(({ name, previewSrc }) => (
 						<a href="/#" un-decoration="none">
 							<figure>
-								<img alt={`${name}'s avatar`} src={previewSrc} />
+								<img alt={`Preview: ${name}`} src={previewSrc} />
 								<figcaption>{name}</figcaption>
 							</figure>
 						</a>
