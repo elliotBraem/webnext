@@ -10,7 +10,7 @@
 		"start:voyager:client": "vite ./service/voyager/client --host",
 		"build:voyager:client": "vite build ./service/voyager/client",
 		"start:bos-viewer": "init-viewer ./service/voyager/client/src/bos",
-		"bos-preview": "pnpm i && concurrently 'pnpm start:bos-viewer' 'pnpm start:voyager:client'"
+		"bos-preview": "corepack prepare pnpm@latest --activate && pnpm i && concurrently 'pnpm start:bos-viewer' 'pnpm start:voyager:client'"
 	},
 	"dependencies": {
 		"@iconify-json/cil": "^1.1.5",
@@ -20,6 +20,7 @@
 		"@unocss/reset": "^0.55.3",
 		"near-social-bridge": "^1.5.0",
 		"preact": "^10.16.0",
+		"wouter": "^2.11.0",
 		"zod": "^3.22.2"
 	},
 	"devDependencies": {
