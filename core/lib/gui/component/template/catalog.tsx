@@ -1,30 +1,29 @@
-export const CatalogTemplate = ({ ...props }) => {
-	const collectionsMock = [
-		{
-			type: "collection",
-			name: "Foxes",
-			icon: { metadata: { type: "react.element" }, data: <span un-i="openmoji-fox" /> },
-		},
-	]
+import { useState, useEffect } from 'preact/hooks';
+import { getAllThings } from '../service';
 
+export const CatalogTemplate = ({ ...props }) => {
+	const [things, setThings] = useState({});
+
+  // Fetch things when the component mounts
+  useEffect(() => {
+		loadData();
+  }, []);
+
+	function loadData() {
+		getAllThings({ accounts: ["efiz.near", "carina.akaia.near"], type: "**" }).then((fetchedThings) => {
+      setThings(fetchedThings);
+    });
+	};
+	
 	return (
 		<div flex="col" w="full" h="full" {...props}>
 			<div flex="~" gap="4" p="4" w="full" h="full">
 				<aside flex="col">
 					<ul w="full" h="full" p="0" m="0" list="none">
-						{collectionsMock.map(({ name, icon }) => (
-							<li flex="~" gap="2">
-								{icon.metadata.type === "react.element" ? (
-									icon.data
-								) : (
-									<span un-i="openmoji-magnifying-glass-tilted-right" />
-								)}
-								<span>{name}</span>
-							</li>
-						))}
+						<RecursiveElement data={things} />
 					</ul>
 				</aside>
-
+				<button onClick={loadData}>Load data</button>
 				<section flex="~">
 					{[
 						{
@@ -44,7 +43,7 @@ export const CatalogTemplate = ({ ...props }) => {
 					].map(({ name, previewSrc }) => (
 						<a href="/#" un-decoration="none">
 							<figure>
-								<img alt={`Preview: ${name}`} src={previewSrc} />
+								<img alt={`${name}'s avatar`} src={previewSrc} />
 								<figcaption>{name}</figcaption>
 							</figure>
 						</a>
@@ -54,3 +53,35 @@ export const CatalogTemplate = ({ ...props }) => {
 		</div>
 	)
 }
+
+const RecursiveElement = ({ data, level = 0 }) => {
+  const [expandedKeys, setExpandedKeys] = useState({});
+
+  const toggleExpand = (key) => {
+    setExpandedKeys({
+      ...expandedKeys,
+      [key]: !expandedKeys[key],
+    });
+  };
+
+  return (
+    <div style={{ marginLeft: `${level * 20}px` }}>
+      {Object.keys(data).map((key, index) => (
+        <div key={index}>
+          {typeof data[key] === 'object' ? (
+            <>
+              <span onClick={() => toggleExpand(key)} style={{ cursor: 'pointer' }}>
+                {expandedKeys[key] ? '[-]' : '[+]'} {key}
+              </span>
+              {expandedKeys[key] && <RecursiveElement data={data[key]} level={level + 1} />}
+            </>
+          ) : (
+            <span>
+              {key}: {data[key]}
+            </span>
+          )}
+        </div>
+      ))}
+    </div>
+  );
+};
